@@ -1,0 +1,40 @@
+package java_data_types;
+
+abstract class Bank {
+	abstract void getBalance();
+	double balance; 
+}
+	class BankA extends Bank {
+		void getBalance() {
+		System.out.println("Deposited 100");
+	}
+
+	class BankB extends Bank {
+		void getBalance() {
+		System.out.println("Deposited 150");
+	}
+}
+	class BankC extends Bank {
+		void getBalance() {
+		System.out.println("Deposited 200");
+		
+	}
+		
+}
+	public class Task2 {
+		
+
+	public void main(String[] args) {
+		Bank a = new BankA();
+		a.getBalance();
+		
+		Bank b = new BankB();
+		b.getBalance();
+		
+		Bank c = new BankC();
+		c.getBalance();
+		
+	}
+
+  }
+}
